@@ -1,0 +1,512 @@
+/*Carla Gay Colmar Academy Project*/
+
+/*Colors*/
+
+/*Dark Cyan #2F4D4A*/
+/*Cyan #2F9A8E*/
+/*White #FFF*/
+
+/*Global Styles*/
+html {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	width: 100%;
+	height: 100%;
+}
+body, main {
+	width: 100%;
+}
+
+
+/*Header*/
+
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 64px;
+	width: 100%;
+	position: fixed;
+	background-color: #fff;
+	top: 0;
+}
+.logo img, .logo h1 {
+	display: inline-block;
+}
+.logo {
+	display: flex;
+	align-items: center;
+	padding-left: 24px;
+}
+.logo h1 {
+	font-family: 'Slabo 27px', serif;
+	font-size: 2rem;
+	color: #2F9A8E;
+}
+.logo h1 span {
+	font-weight: bold;
+	color: #2F4D4A;
+}
+.logo img {
+	height: 64px;
+	margin: 0 auto;
+}
+nav {
+	padding-right: 24px;
+}
+nav ul li {
+	display: inline-block;
+	font-size: 1.2rem;
+		color: #2F4D4A;
+}
+nav ul li:nth-child(1n+2) {
+	padding-left: 16px;
+}
+
+/*Banner*/
+.banner {
+	margin-top: 64px;
+	background-color: #2F9A8E;
+	height: 490px;
+	-webkit-box-shadow: 0 5px 20px 1px #C9C9C9;
+	box-shadow: 0 5px 20px 1px #C9C9C9;
+}
+.flex-row {
+	display: flex;
+	height: 100%;
+}
+.banner .img {
+	background-image: url(../images/banner.jpg);
+	width: 60%;
+	margin: 32px 24px;
+	background-size: cover;
+	background-position: top;
+}
+.heading {
+  width: 40%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.heading h2, .heading p  {
+	display: inline-block;
+}
+.heading h2 {
+	font-family: 'Slabo 27px', serif;
+	font-size: 2rem;
+	font-weight: bold;
+	color: #fff;
+}
+.heading p {
+	color: #fff;
+	padding: 20px 0;
+	line-height: 1.3;
+  padding-right: 24px;
+}
+.heading a {
+	background-color: #2F4D4A;
+	text-decoration: none;
+	color: #fff;
+	text-align: center;
+	padding: 8px;
+  margin-right: 24px;
+	-webkit-box-shadow: 0 2px 10px 1px #227067;
+	box-shadow: 0 2px 10px 1px #227067;
+  /*css transition - BKG/font color*/
+	-webkit-transition: background-color 1s ease-in-out, color 500ms ease-in-out;
+	-moz-transition: background-color 1s ease-in-out, color 500ms ease-in-out;
+	-ms-transition: background-color 1s ease-in-out, color 500ms ease-in-out;
+	-o-transition: background-color 1s ease-in-out, 500ms ease-in-out;
+	transition: background-color 1s ease-in-out, color 500ms ease-in-out;
+}
+.heading a:hover {
+	background-color: #fff;
+	color: #2F4D4A
+
+}
+/*Events*/
+
+.events {
+	width: 100%;
+	height: 600px;
+}
+.article1 {
+	width: 60%;
+	margin: 32px 24px;
+}
+.article1 .img {
+	width: 100%;
+	height: 345px;
+	margin: 0;
+	background-image: url(../images/information-main.jpg);
+	background-size: cover;
+	background-position: top;
+}
+.article1 h3 {
+	font-family: 'Slabo 27px', serif;
+	font-size: 1.8rem;
+	font-weight: bold;
+	color: #2F4D4A;
+	padding-top: 32px;
+}
+.article1 p {
+	color: #2F4D4A;
+	padding-top: 24px;
+	line-height: 1.5em;
+}
+.article1 p:nth-child(even) {
+	color: #2F4D4A;
+	font-size: .8rem;
+}
+.side-article {
+	width: 40%;
+	max-height: 100%;
+	border-left: solid 1px #2F4D4A;
+}
+.article2 {
+	height: 160px;
+}
+.side-article article:nth-child(even) {
+	background-color: #d6d8d8;
+}
+.article-img{
+	width: 35%;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	margin: 16px;
+}
+.img-shadow {
+	background-image: url(../images/information-orientation.jpg);
+}
+.img-map {
+	background-image: url(../images/information-campus.jpg);
+}
+.img-guest {
+	background-image: url(../images/information-guest-lecture.jpg);
+}
+.article-small {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-right: 24px;
+	width: 65%;
+}
+.article-small h4 {
+	font-family: 'Slabo 27px', serif;
+	font-size: 1.2rem;
+	font-weight: bold;
+	color: #2F4D4A;
+}
+.article-small p {
+	font-size: .8rem;
+	color: #2F4D4A;
+	padding-top: 8px;
+}
+.article-small a {
+	display: table;
+	background-color: #2F4D4A;
+	font-size: .8rem;
+	color: #fff;
+	margin-top: 8px;
+	padding: 4px;
+	text-decoration: none
+}
+
+/*Learning*/
+
+.learning {
+	background-color: #2F9A8E;
+	height: 700px;
+	-webkit-box-shadow: 0 0 20px 10px #C9C9C9;
+	box-shadow: 0 0 20px 10px #C9C9C9;
+}
+.learning .flex-row {
+	max-width: 1000px;
+	height: 600px;
+	flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0 72px;
+}
+.section-heading {
+	font-family: 'Slabo 27px', serif;
+	font-size: 1.8rem;
+	font-weight: bold;
+	text-align: center;
+	padding: 32px 0;
+}
+.learning h3 {
+	color: #fff;
+}
+.learning .small {
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	width: 250px;
+	height: 250px;
+	transition: all 200ms ease-in-out;
+}
+.learning .small:hover {
+	/*css transition - article scale*/
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1);
+}
+.margin {
+	margin-left: 24px;
+}
+.small img {
+	width: 250px;
+	height: auto;
+}
+.small h4, .small h5, .small p {
+	color: #2F4D4A;
+	padding: 0 16px ;
+}
+.small h4 {
+	font-family: 'Slabo 27px', serif;
+	font-size: 1.2rem;
+	font-weight: bold;
+	padding-top: 16px;
+}
+.small h5 {
+	font-size: 0.8rem;
+	text-transform: uppercase;
+	padding-top: 8px;
+}
+.small p {
+	font-size: 0.8rem;
+	padding-top: 8px;
+	line-height: 1.2;
+}
+
+/*Thesis*/
+
+.section-heading {
+	color: #2F4D4A;
+}
+.thesis .article1 {
+	margin-top: 0;
+}
+video {
+	width: 100%;
+}
+.thesis .side-article {
+	border: none;
+}
+.img-design {
+	background-image: url(../images/thesis-fisma.jpg);
+}
+.img-ny {
+	background-image: url(../images/thesis-now-and-then.jpg);
+}
+
+/*Footer*/
+
+footer {
+	height: 100px;
+	background-color: #2F9A8E;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	-webkit-box-shadow: 0 -5px 20px 1px #C9C9C9;
+	box-shadow: 0 -5px 20px 1px #C9C9C9;
+}
+footer p, footer nav {
+  display: inline-block;
+}
+footer p, footer nav li {
+	color: #fff;
+	font-size: .8rem;
+}
+footer p {
+	padding-left: 24px;
+}
+
+
+/*Media Queries*/
+
+/*Desktop*/
+@media only screen and (min-width: 951px) {
+	/*Header*/
+	.logo .mobile-svg {
+		display: none;
+	}
+}
+/*Tablet 950px*/
+@media only screen and (min-width: 741px) and (max-width: 950px) {
+	/*Header*/
+	.logo .mobile-svg {
+		display: none;
+	}
+	/*Learning*/
+	.learning {
+		height: 950px;
+	}
+	.learning .flex-row {
+		max-width: 600px;
+		height: 858px;
+		justify-content: space-around;
+	}
+	.margin {
+		margin-left: 0;
+	}
+}
+/*Mobile 740px*/
+@media only screen and (max-width: 740px) {
+	/*Header*/
+	.logo h1, header nav {
+		display: none;
+	}
+	.logo {
+		width: 100%;
+		padding-left: 0;
+	}
+	.logo img {
+		padding-top: 10px;
+	}
+
+	/*Banner*/
+
+	.banner {
+		height: 630px;
+	}
+	.banner .flex-row {
+		flex-direction: column;
+	}
+	.banner .flex-row .img {
+		width: 100%;
+		height: 300px;
+		margin: 0;
+		background-position: top;
+	}
+	.banner .heading {
+		width: 100%;
+		align-items: center;
+	}
+	.banner .heading h2 {
+		font-size: 3rem;
+		padding: 32px 16px;
+	}
+	.banner .heading p {
+		font-size: 1.5rem;
+    padding: 0 16px 0 16px;
+	}
+	.banner .heading a {
+		font-size: 1.3rem;
+		padding-left: 20px;
+		padding-right: 20px;
+    margin-top: 32px;
+	}
+	/*Events*/
+	.events {
+		height: 1200px;
+	}
+	.events .article1 {
+		display: none;
+	}
+	.events .side-article {
+		width: 100%;
+	}
+	.events .flex-row {
+		flex-direction: column;
+		height: 400px;
+		width: 100%;
+	}
+	.events .article-img {
+		width: 100%;
+		height: 70%;
+    background-position: center;
+    margin: 16px 0;
+	}
+	.img-shadow {
+	background-image: url(../images/information-orientation-mobile.jpg);
+	}
+	.img-map {
+		background-image: url(../images/information-campus-mobile.jpg);
+	}
+	.img-guest {
+		background-image: url(../images/information-guest-lecture-mobile.jpg);
+	}
+	.events .article-small{
+		width: 100%;
+		height: 30%;
+		text-align: center
+	}
+	.events .article-small h4 {
+		font-size: 1.8rem;
+	}
+	.events .article-small p {
+		font-size: 1rem;
+	}
+	.events .article-small a {
+		text-align: center;
+		margin: 15px auto;
+    padding: 4px 20px;
+    font-size: 1.2rem;
+	}
+
+/*Learning*/
+
+	.learning {
+		height: 730px;
+	}
+	.learning h3 {
+		font-size: 2.5rem;
+	}
+	.learning .flex-row {
+		flex-direction: column;
+		align-items: center;
+		flex-wrap: nowrap;
+		padding: 0 10px;
+	}
+	.learning .flex-row .small img, .learning .flex-row .small h5, .learning .flex-row .small p {
+		display: none;
+	}
+	.learning .small {
+		height: 100px;
+		width: 85%;
+		margin: 0;
+		justify-content: center;
+	}
+	.learning .small:nth-child(1n+2) {
+		margin-top: 8px;
+	}
+	.learning .small h4 {
+		font-size: 1.8rem;
+		padding-top: 0;
+	}
+	/*Thesis*/
+
+	.thesis {
+		height: 400px;
+	}
+	.thesis h3 {
+		font-size: 2.5rem;
+	}
+	.thesis .article1 h3, .thesis .article1 p, .thesis .side-article {
+		display: none;
+	}
+	.thesis .article1 {
+		width: 100%;
+		margin: 0;
+	}
+	.thesis video {
+		max-height: 296px;
+	}
+
+	/*Footer*/
+
+	footer {
+		display: block;
+	}
+	footer p {
+		padding-top: 40px;
+	}
+	footer nav {
+		display: none;
+	}
+}
